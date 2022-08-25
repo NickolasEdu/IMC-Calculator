@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Sua Saúde</title>
+
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            flex-direction: column;
+            width: 300px;
+            border: 2px black solid;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container input {
+            margin: 8px 4em;
+        }
+
+        .container button {
+            display: block;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form id="mainForm" class="container">
+            <h1>Calcular meu IMC</h1>
+            <input 
+            name="altura"
+            type="number"
+            placeholder="Sua altura">
+            
+            <input
+            name="peso"
+            type="number"
+            placeholder="Seu Peso">
+
+            <button
+            id="btn"
+            type="submit">
+            Calcular</button>
+        </form>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
