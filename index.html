@@ -10,20 +10,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
     <style>
+
+        body{
+            background-color: #000;
+            color: #FFF;
+        }
         main {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             width: 100vw;
             height: 100vh;
         }
 
         .container {
             flex-direction: column;
-            width: 400px;
-            border: 2px black solid;
+            width: 550px;
+            border: 2px grey solid;
             padding: 30px;
             text-align: center;
+            margin-bottom: 10px;
         }
 
         .container input {
@@ -35,6 +42,10 @@
             margin: 5px auto;
         }
 
+        .hiddenContent {
+            display: hidden;
+        }
+
         #result {
             display: block;
         }
@@ -44,25 +55,35 @@
 <body>
     <main>
         <form id="mainForm" class="container">
-            <h1>Calcular meu IMC</h1>
+            <h1>
+                Calcular meu IMC
+            </h1>
+
             <input 
-            name="altura"
-            type="number"
-            placeholder="Sua altura">
+                name="altura"
+                type="number"
+                placeholder="Sua altura"
+            >
             
             <input
-            name="peso"
-            type="number"
-            placeholder="Seu Peso">
+                name="peso"
+                type="number"
+                placeholder="Seu Peso"
+            >
 
             <button
-            id="btn"
-            type="button"
-            class="btn btn-secondary">
-            Calcular</button>
+                id="btn"
+                type="button"
+                class="btn btn-secondary hiddenContent">
+                Calcular
+            </button>
         </form>
 
-        <div id="result" class="alert alert-success" role="alert">
+        <div
+            id="result"
+            class="alert alert-success"
+            role="alert">
+            Seu resultado aqui. 
         </div>
     </main>
 
