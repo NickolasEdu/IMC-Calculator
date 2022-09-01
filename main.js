@@ -16,13 +16,18 @@ function calcImc() {
 }
 
 function showMessage(res) {
+    const result = document.getElementById('result')
+    let message
+    
     if (res < 18.5) {
-        console.log('Magreza')
+        message = 'Magreza'
     } else if (res <= 24.9) {
-        console.log('Normal')
+        message = 'Normal'
     } else if (res <= 29.9 ) {
-        console.log('sobrepeso')
+        message = 'sobrepeso'
     } else {
-        console.log('Obesidade de grau I, II ou III')
+        message = 'Obesidade de grau I, II ou III'
     }
+
+    result.innerHTML = `<p>Segundo o indice IMC o seu estado é de ${message}</p>` 
 }
