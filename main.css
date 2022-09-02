@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #25274d;
+    --text-color: #aaabb8;
+}
+
+body {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+main {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+    flex-direction: column;
+}
+
+.container {
+    flex-direction: column;
+    width: 550px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container input {
+    margin: 8px 4em;
+}
+
+.container button {
+    display: block;
+    margin: 5px auto;
+}
+
+.hiddenContent {
+    display: hidden;
+}
+
+#result {
+    display: block;
+}
