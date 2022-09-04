@@ -1,6 +1,7 @@
 :root {
     --primary-color: #25274d;
     --text-color: #aaabb8;
+    --light-color: #2e9cca;
 }
 
 body {
@@ -14,7 +15,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 95vh;
+    height: 90vh;
     flex-direction: column;
 }
 
@@ -41,4 +42,26 @@ main {
 
 #result {
     display: block;
+}
+
+article {
+    margin: auto 2em;
+}
+
+article h2 {
+    margin-top: 5px;
+}
+
+article #table {
+    width: 450px;
+}
+
+article span {
+    display: flex;
+    justify-content: end;
+}
+
+article a {
+    text-decoration: none;
+    color: var(--light-color);
 }
