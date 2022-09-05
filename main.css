@@ -8,6 +8,14 @@ body {
     background-color: var(--text-color);
     color: var(--primary-color);
 }
+
+header {
+    background-color: var(--primary-color);
+}
+
+header button {
+    margin: 5px;
+}
 main {
     background-color: var(--primary-color);
     color: var(--text-color);
