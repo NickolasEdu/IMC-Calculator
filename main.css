@@ -11,11 +11,23 @@ body {
 
 header {
     background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 100vw;
+}
+
+.headline {
+    display: flex;
+}
+
+.headline h1 {
+    align-self: flex-end;
+    margin-left: 900px;
 }
 
 header button {
     margin: 5px;
 }
+
 main {
     background-color: var(--primary-color);
     color: var(--text-color);
